@@ -92,6 +92,8 @@ void BST<T>::insert(T new_data)
     if(root == NULL)
     {
         root->set_data(new_data);
+        root->set_left(NULL);
+        root->set_right(NULL);
     }
     else
     {
@@ -176,9 +178,10 @@ Node<T> *BST<T>::search(T val)
 template<class T>
 void BST<T>::remove(T val)
 {
+    Node<T> *del;
     if(search(val) != NULL)
     {
-
+        
     }
 }
 
